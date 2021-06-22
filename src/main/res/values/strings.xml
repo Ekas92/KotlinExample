@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FinhealKotlin</string>
+    <string name="tag_login_with_no_head">Enter your mobile number</string>
+    <string name="tag_login_with_no_sub_head">Please enter your mobile number. We will send you a verification code.</string>
+    <string name="tag_otp_login_sub_head">Please enter the OTP Code, sent to your mobile number.</string>
+    <string name="tag_otp_head">Enter The One Time Password</string>
+    <string name="apply_t_n_c">By applying this, you agree to our Terms &amp; Conditions and Privacy Policy</string>
+    <string name="btn_proceed">Proceed</string>
+    <string name="terms_n_conditions">Terms &amp; Conditions</string>
+    <string name="privacy">Privacy Policy</string>
+
+</resources>

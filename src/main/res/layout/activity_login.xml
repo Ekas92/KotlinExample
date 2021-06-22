@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp_10"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:srcCompat="@drawable/logingreen" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_2"
+            android:text="@string/tag_login_with_no_head"
+            android:gravity="center"
+            android:textColor="@color/greenDarkColor"
+            android:textSize="@dimen/sp_22" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="@string/tag_login_with_no_sub_head"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_17" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/tag_login_with_no_head"
+            android:layout_marginTop="@dimen/dp_10"
+            app:suffixText="Send OTP"
+            app:suffixTextColor="@color/greenDarkColor"
+            app:boxCornerRadiusBottomEnd="@dimen/dp_5"
+            app:boxCornerRadiusBottomStart="@dimen/dp_5"
+            app:boxCornerRadiusTopEnd="@dimen/dp_5"
+            app:boxCornerRadiusTopStart="@dimen/dp_5"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="13"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:inputType="number"
+                android:minLines="1"
+                android:paddingStart="@dimen/dp_15"
+                android:textColor="@color/greenDarkColor"
+                android:textSize="@dimen/sp_18"
+                app:backgroundTint="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingEnd="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_2"
+                android:text="@string/tag_otp_head"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="@color/greenDarkColor"
+                android:textSize="@dimen/sp_22" />
+
+            <com.poovam.pinedittextfield.SquarePinField
+                android:id="@+id/otp_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                app:fieldColor="@color/greenDarkColor"
+                android:textSize="@dimen/sp_18"
+                app:cornerRadius="10dp"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/widget_edittext_dark"
+                app:noOfFields="6"
+                />
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:buttonTint="@color/black"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="top|left"
+                android:text="@string/apply_t_n_c"
+                android:textSize="@dimen/sp_15" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/empty_bottom_space" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp_35"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_35"
+                android:layout_marginBottom="@dimen/dp_25"
+                android:textStyle="bold"
+                android:text="@string/btn_proceed"
+                android:textSize="@dimen/sp_17"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

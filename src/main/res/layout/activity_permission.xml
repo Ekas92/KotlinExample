@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_15"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/gif_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mandatory"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permissions"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:padding="@dimen/dp_10"
+            app:cardCornerRadius="@dimen/dp_10"
+            app:cardBackgroundColor="@color/fp_green"
+            android:layout_marginTop="@dimen/dp_10"
+            android:elevation="@dimen/dp_10"
+            android:outlineSpotShadowColor="@color/tab_indicator_gray"
+            android:outlineAmbientShadowColor="@color/tab_indicator_gray"
+            app:cardElevation="@dimen/dp_12"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:src="@drawable/shield"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Your data is 100% safe"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dear User,"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We'll require the below permissions to determine the credit risk &amp; creditworthiness of the applicant to enable instant credit disbursal."
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="@dimen/dimen_12dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To collect and monitor specific information about your device including your hardware model, operating system and version, unique device identifier, user profile information, wi-fi information, mobile network information to uniquely identify the devices and ensure that unauthorised devices are not able to act on your behalf helping us to prevent frauds."
+                android:layout_marginLeft="@dimen/dp_30"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"
+                android:drawableLeft="@drawable/telp"
+                android:drawablePadding="@dimen/dimen_12dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collect and monitor contacts information to detect references and autofill data during the loan application process."
+                android:layout_marginLeft="@dimen/dp_30"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storage"
+                android:drawableLeft="@drawable/folder"
+                android:drawablePadding="@dimen/dimen_12dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storage to allow you to upload documents and pictures for loan application."
+                android:layout_marginLeft="@dimen/dp_30"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:drawableLeft="@drawable/diaphragm"
+                android:drawablePadding="@dimen/dimen_12dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera to allow you to capture images of documents and pictures for loan application."
+                android:layout_marginLeft="@dimen/dp_30"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:paddingRight="30dp"
+            android:textSize="@dimen/dimen_18sp"
+            android:paddingLeft="30dp"
+            android:background="@drawable/bg_orange_rate_us"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:drawableTint="@color/white"
+            android:text="Ok, LETS GO"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</ScrollView>
